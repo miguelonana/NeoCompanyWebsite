@@ -1,0 +1,6 @@
+index:
+    path: /
+    controller: App\Controller\HomeController::index
+blogIndex:
+    path: /blog
+    controller: App\Controller\BlogController::index
