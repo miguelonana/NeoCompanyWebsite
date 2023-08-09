@@ -1,0 +1,68 @@
+{% extends 'base2.html.twig' %}
+
+{% block title %}nom du partenaire{% endblock %}
+
+{% block body %}
+
+    <div style="padding-top: 150px; background-color: #123f8c;">
+
+    </div>
+
+    <main id="main">
+
+
+
+        <!-- ======= Portfolio Details Section ======= -->
+        <section id="portfolio-details" class="portfolio-details">
+            <div class="container">
+
+                <div class="row gy-4">
+
+                    <div class="col-lg-8">
+                        <div class="portfolio-details-slider swiper">
+                            <div class="swiper-wrapper align-items-center">
+
+                                <div class="swiper-slide">
+                                    <img src="{{ asset('assets/img/portfolio/portfolio-1.jpg') }}" alt="">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="assets/img/portfolio/portfolio-2.jpg" alt="">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="assets/img/portfolio/portfolio-3.jpg" alt="">
+                                </div>
+
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="portfolio-info">
+                            <h3>Informations</h3>
+                            <ul>
+                                <li><strong>Nom</strong>: {{part.getNom()}}</li>
+                                <li><strong>Localisation</strong>: ASU Company</li>
+                            <!--    <li><strong>Project date</strong>: 01 March, 2020</li>  -->
+                                <li><strong>Project URL</strong>: <a href="#">{{part.getLien()}}</a></li>
+                            </ul>
+                        </div>
+                        <div class="portfolio-description">
+                            <h2>Description</h2>
+                            <p>
+                                {{part.getDescription()}}
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section><!-- End Portfolio Details Section -->
+
+    </main><!-- End #main -->
+
+
+{% endblock %}

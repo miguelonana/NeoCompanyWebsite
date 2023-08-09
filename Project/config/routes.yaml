@@ -4,3 +4,9 @@ index:
 blogIndex:
     path: /blog
     controller: App\Controller\BlogController::index
+showpartenaireDetail:
+    path: /showpartenaireDetail/{id}
+    controller: App\Controller\PartenaireController::showpartenaireDetail
+faqIndex:
+    path: /faq
+    controller: App\Controller\HomeController::faq
